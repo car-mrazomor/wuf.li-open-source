@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Home — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Home — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Home
+                </div>
+                <div class="panel-body">
+                  <div class="alert alert-info" role="alert">
+                      SMTP is turned off by default. To enable it, simply <a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="/login">login with your account</a> and switch it on in the settings. This process is quick and ensures that spam is prevented.
+                  </div>
+                  <!--div class="text-center shills">
+                    <a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="">
+                      <img class="img-fluid" width="552px" id="" src="" alt="">
+                    </a>
+                    <a target="_blank" class="link-offset-2 link-underline link-underline-opacity-0" href="">
+                      <img class="img-fluid" width="552px" id="" src="" alt="">
+                    </a>
+                  </div>
+                  <br-->
+                  <div class="row">
+                    <div class="col-md-6">
+                      People's quoting:
+                      <figure>
+                        <blockquote>
+                          {{g}}
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                          <cite title="Source Title">wufnonymous</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                    <h2 class="card-title">E-mail Hosting!</h2>
+                    <p class="card-text">
+                      Wuf is your wuf wuf free solution for professional email hosting. Secured, private and sexy as hell. Wuf allows you to register using Tor network or any other privacy services like proxies and/or VPNs. This is a fully automated project, so when you add your domain, the system automatically adds it and sends you email.
+                    </p>
+                    <h2 class="card-title">Why the Wuf Wuf I should use it?</h2>
+                    <ul>
+                      <li>It's free for everyone</li>
+                      <li>Privacy you can trust</li>
+                      <li>Supports your custom domain</li>
+                    </ul>
+                    <p class="card-text">When you create an account, SMTP is turned off by default to prevent immediate spamming. To turn it on, simply log in and enable it. Each account comes with 800 MB of storage. If you need more, please contact me. You can use any mail client you prefer—personally, I recommend Thunderbird. It’s a great software, though it’s a shame there’s no mobile app.</p>
+                    <br>
+                    <p class="card-text">
+                      Not cool or sexy enough? Pff... 
+                    </p>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h2 class="card-title"># Wuf-ers count</h2>
+                      <div class="progress">
+                        <div class="progress-bar {{bg_class}}" role="progressbar" style="width: {{prec}}%" aria-valuenow="{{prec}}" aria-valuemin="0" aria-valuemax="100">{{count}} wuf-ers here</div>
+                      </div>
+                      <br>
+                        <h2 class="card-title">Hidden Links: </h2>
+                        <p class="card-text">
+                          <ul>
+                            <li>Website: <a class="link-offset-2 link-underline link-underline-opacity-0" href="http://lt532lqg7p7yus4jmpcicdrwc7rezmrbtq6ykvj2jckg2emjnldnpcqd.onion">lt532lqg7p7yus4jmpcicdrwc7rezmrbtq6ykvj2jckg2emjnldnpcqd.onion</a></li>
+                            <li>Webmail: <a class="link-offset-2 link-underline link-underline-opacity-0" href="http://hypue5sox4w7xhrrfpiivr5dxemdbuh2ntysqnzibd4jlini7d24cnid.onion">hypue5sox4w7xhrrfpiivr5dxemdbuh2ntysqnzibd4jlini7d24cnid.onion</a></li>
+                        </ul>
+                        </p>
+                        <br>
+                          There is quote from /x/, interested, ya?
+                          <figure>
+                            <blockquote>
+                              I have absolutely no fear of death. From my near-death research and my personal experiences, death is, in my judgment, simply a transition into another kind of reality
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                              <cite title="Source Title">Raymond Moody</cite>
+                            </figcaption>
+                          </figure>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="card-title">How secure is Wuf? </h2>
+                        <p class="card-text">
+                          The short answer is: it's a matter of trust. Wuf doesn't sift through your emails to generate targeted ads, nor do Wuf access email content unless compelled by a legal court order. However, it's technically feasible for Wuf to access emails, given that IMAP/SMTP protocols don’t offer intrinsic user-side or client-side encryption. You have to rely on Wuf integrity in this regard. Even if it's implemented encryption, it would still be technically possible for me to access email content. This situation was similar with Lavabit – where emails were stored encrypted only for paying members, often overlooked – but interception could still occur during transmission (SMTP) or when accessed by your mail client (IMAP). For enhanced privacy, we advocate using PGP to encrypt your emails, utilizing mail client add-ons like Enigmail, or opting for POP to download your emails and regularly purge them from our server.
+                        </p>
+                        
+                        <h2 class="card-title">Custom Domain Support: </h2>
+                        <p class="card-text">
+                            Want to personalize your email address? With Wuf, you can add your own <a class="link-offset-2 link-underline link-underline-opacity-0" href="/add-domain">domain</a> to create a unique and professional email ID.
+                        </p>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+        </div>
+
+
+
+        
+        <br>
+        <br>
+    </body>
+</html>

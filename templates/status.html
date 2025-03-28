@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Check Status — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Check Status — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% if errors != '0' %}
+                <div class="alert alert-warning" role="alert">
+                    Currently {{errors}} services not working.
+                </div>
+            {% endif %}
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                      <th>Service</th>
+                      <th>State</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in data %}
+                        <tr>
+                            <td>{{ item['k'] }}</td>
+                            <td>{{ item['v'] }}</td>
+                        </tr>
+                    {% endfor %}
+                  </tbody>
+              </table>
+        </div>
+
+
+
+        
+        <br>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+flask Flask-Bootstrap requests WTForm Flask-WTF flask-cors flask-login flask-sqlalchemy

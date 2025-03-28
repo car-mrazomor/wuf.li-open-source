@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Register — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Register — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Register
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-warning" role="alert">
+                        Some domain owners want to put password so its limited on creating accounts! Completly normal LOL
+                      </div>
+                    {% if message_alert == 'success' %}
+                        <div class="alert alert-success" role="alert">
+                            Registration successful, you can login now!
+                        </div>
+                    {% endif %}
+                    {% if message_alert and message_alert == "Wrong password" %}
+                        <div class="alert alert-danger" role="alert">
+                            Hmm, odd, but password is wrong!
+                        </div>
+                    {% endif %}
+                    <form class="row g-3 needs-validation" method="post" action="{{ url_for('limited_domains') }}" enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+                        <input type="text" class="form-control" id="username" placeholder="username" name="username" value="{{username}}" hidden required>
+                        <input type="text" class="form-control" id="password" placeholder="password" name="password" value="{{password}}" hidden required>
+                        <div class="col-md-6">
+                            <div class="col-auto">
+                                <label for="d">Domain</label>
+                                <input type="text" class="form-control" id="d" placeholder="Domain" name="d" value="{{d}}" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-6">
+                            <div class="col-auto">
+                                <label for="p">Password</label>
+                                <input type="text" class="form-control" id="p" placeholder="Password" name="p" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+        </div>
+        <br>
+        <br>
+    </body>
+</html>

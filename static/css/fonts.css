@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('/static/webfonts/rubik-italic.woff2') format('woff2'),
+         url('/static/webfonts/rubik.tff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('/static/webfonts/ProductSans-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Italic'), url('/static/webfonts/ProductSans-Italic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Thin Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Thin Regular'), url('/static/webfonts/ProductSans-Thin.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Product Sans Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Light Regular'), url('/static/webfonts/ProductSans-Light.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Medium Regular'), url('/static/webfonts/ProductSans-Medium.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Black Regular'), url('/static/webfonts/ProductSans-Black.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Thin Italic'), url('/static/webfonts/ProductSans-ThinItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Light Italic'), url('/static/webfonts/ProductSans-LightItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Medium Italic'), url('/static/webfonts/ProductSans-MediumItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Bold'), url('/static/webfonts/ProductSans-Bold.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Bold Italic'), url('/static/webfonts/ProductSans-BoldItalic.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Product Sans Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Black Italic'), url('/static/webfonts/ProductSans-BlackItalic.woff') format('woff');
+}

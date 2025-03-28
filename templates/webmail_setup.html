@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Webmail — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Webmail — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Webmail
+                </div>
+                <div class="panel-body">
+
+                    <code>Online webmail comming soon...</code>
+
+                    <h2>How to properly setup mail server on your device?</h2>
+                    <p class="card-text">
+                        <ul>
+                            <li>SMTP Server: <code>mail.wuf.li</code> and port <code>587</code></li>
+                            <li>IMAP Server: <code>mail.wuf.li</code> and port <code>993</code></li>
+                            <li>Username with @domain.tld</li>
+                            <li>And your password, daaaah <mark>In exchangers like thunderbird, you need to choose normal auth!</mark></li>
+                        </ul>
+                    </p>
+
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+            </div>
+        </div>
+
+
+
+        
+        <br>
+        <br>
+    </body>
+</html>

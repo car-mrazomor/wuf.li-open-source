@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Help — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Help — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Help
+                </div>
+                <div class="panel-body">
+
+                    <h2 class="card-title">How can I connect my mail client? </h2>
+                    <p class="card-text">
+                        Use an Exchange option, the server name is <code>mail.wuf.li</code> and username is both <b>username and domain</b>
+                    </p>
+                    
+                    <h2 class="card-title">How can I reset password or I forgot password? </h2>
+                    <p class="card-text">
+                        You will need to contact me, check contact page.
+                    </p>
+                    
+                    <h2 class="card-title">I can not login into account! </h2>
+                    <p class="card-text">
+                        Either server is down or you are banned for any reason down below.
+                    </p>
+
+                    <h2 class="card-title">How to not get banned</h2>
+
+                    <p class="card-text">
+                        You may be banned for the following reasons:
+                        <ul>
+                            <li>Sending spam</li>
+                            <li>Bulk registration</li>
+                            <li>Using your e-mail to abuse other services</li>
+                            <li>Conducting any activity that breaks the laws in which Wuf is governed</li>
+                        </ul>
+                    </p>
+                    
+                    <h2 class="card-title">I am not getting instructions for setting domain up! </h2>
+                    <p class="card-text">
+                        Make sure to check spam/junk mailboxes and if it's not there, please contact me.
+                    </p>
+                    
+                    <h2 class="card-title">My domain it's not shown there! </h2>
+                    <p class="card-text">
+                        Either your domain is banned or something went wrong. In both cases you can contact me.
+                    </p>
+
+                    <h2 class="card-title">I can not recieve or send emails from domain name I added! </h2>
+                    <p class="card-text">
+                        Make sure to setup DNS records as you get email from adding domain.
+                    </p>
+
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+            </div>
+        </div>
+
+
+
+        
+        <br>
+        <br>
+    </body>
+</html>

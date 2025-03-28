@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>500 Internal Error — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="500 Internal Error — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+        <style>html, body {background-color: #000;color: #EEE;font-family: 'monospace', sans-serif;font-weight: 100;height: 100vh;margin: 0;}.full-height {height: 100vh;}.flex-center {align-items: center;display: flex;justify-content: center;}.position-ref {position: relative;}.content {text-align: center;}.message {font-size: 36px;padding: 20px;}.big {font-size: 72px;}</style>
+    </head>
+    <body>
+      <div class="flex-center position-ref full-height">
+        <div class="content">
+          <div class="big">500</div>
+          {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="message">{{message}}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+      </div>
+    </body>
+</html>

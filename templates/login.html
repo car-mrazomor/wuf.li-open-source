@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Login — Wuf E-mail Hosting Service</title>
+        <meta property="og:title" content="Login — Wuf E-mail Hosting Service" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Login
+                </div>
+                <div class="panel-body">
+                    {% if message_alert == 'error' %}
+                        <div class="alert alert-warning" role="alert">
+                            Username/Password is wrong or you don't have account here LOL
+                        </div>
+                    {% endif %}
+                    <form class="form-horizontal" method="post" action="/auth_login/" enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Username</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="input_username" placeholder="Username" name="input_username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Password</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <input type="checkbox" class="form-check-input" id="rem" name="rem">
+                                <label class="form-check-label" for="rem">
+                                Remember me
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                or <a href="/register/" class="link-offset-2 link-underline link-underline-opacity-0">Create an account</a>
+                            </div>
+                        </div>
+                    </form>
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+        </div>
+        <br>
+        <br>
+    </body>
+</html>

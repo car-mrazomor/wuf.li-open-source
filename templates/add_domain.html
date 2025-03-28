@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+      <title>Add Domain — Wuf E-mail Hosting Service</title>
+      <meta property="og:title" content="Add Domain — Wuf E-mail Hosting Service" />
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+      {% include '_headsec.html' %}
+    </head>
+    <body>
+        <div class="container">
+            {% include '_navbar.html' %}
+              <div class="panel panel-default">
+                <div class="panel-heading d-flex justify-content-between align-items-center">
+                  Add Domain
+                </div>
+                <div class="panel-body">
+                    <h2 class="card-title">To add your own domain: </h2>
+                    <p class="card-text">
+                        Make sure to send an email to <a class="link-offset-2 link-underline link-underline-opacity-0" href="mailto:mail-join@Wuf">mail-join@wuf.li</a> with subject: "[ADD] domain.tld". The subject line must be exactly as shown (without quotation marks) so the system can recognize and process your request. 
+                    </p>
+                    <p class="card-text">
+                      You will receive an email with instructions for setting up DNS records. Please check your <b>spam or junk</b> folder if you don't receive the email within 15 minutes, or contact me directly. If you encounter any problems, feel free to reach out to me.
+                    </p>
+
+                    <p class="card-text">
+                      The system is fully automated. When you send an email with your domain, it will automatically be added to the list. Please note that it can take up to 10 minutes for your domain to be fully operational. For any issues, please contact me.
+                    </p>
+
+                    <p class="card-text">
+                        <b>ALERT!</b> Please note that once your domain is added, anyone will be able to create an email address using that domain. If you want to restrict access, <a class="link-offset-2 link-underline link-underline-opacity-0" href="/contact">contact me</a> after adding your domain.
+                    </p>
+
+                  <br>
+                </div>
+                {% include '_footer.html' %}
+              </div>
+        </div>
+
+
+
+        
+        <br>
+        <br>
+    </body>
+</html>

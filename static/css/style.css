@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap");
+
+* {
+  font-family: "JetBrains Mono", sans-serif;
+}
+
+body {
+  font-family: "NAVILLE", Fallback, sans-serif;
+  background-color: black;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.border {
+  background-color: #3c3447;
+  margin: 0px;
+  border: 2px solid #3c3447;
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: ellipsis "";
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+span {
+  text-align: center;
+}
+
+.center-text {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nigger {
+  border: #3c3447 solid 3px;
+  padding: 0px;
+  margin: auto;
+  min-height: 20%;
+  min-width: 60%;
+  max-width: 67%;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+a {
+  color: #9d89da;
+}
+
+@media (max-width: 700px) {
+  html,
+  body {
+    overflow-x: scroll;
+  }
+  .center-text {
+    max-width: 90%;
+  }
+}
